@@ -1,7 +1,5 @@
 # Detecting-Spam-Emails
 
-# SpamShield — Spam Email Detection
-
 ## Overview
 SpamShield is a deep learning project that classifies email messages into two categories: Spam and Ham (Not Spam).
 
