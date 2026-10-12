@@ -1,41 +1,117 @@
 # Detecting-Spam-Emails
 
-## Overview
-SpamShield is a deep learning project that classifies email messages into two categories: Spam and Ham (Not Spam).
+Overview
 
-## Technologies Used
-- Python
-- Pandas and NumPy
-- NLTK
-- TensorFlow and Keras
-- LSTM (Long Short-Term Memory)
-- Matplotlib and Seaborn
+SpamShield is a deep learning project that classifies email messages into two categories: Spam and Ham (Not Spam) using Natural Language Processing (NLP) and Long Short-Term Memory (LSTM) networks.
 
-## Workflow
-1. Load and explore the labeled email dataset.
-2. Preprocess email text.
-3. Convert words into numerical sequences using tokenization.
-4. Apply padding to make sequences compatible.
-5. Train an LSTM-based binary classification model.
-6. Evaluate model performance using appropriate classification metrics.
+Technologies Used
 
-## Model Architecture
-Embedding → LSTM → Dense (ReLU) → Dense (Sigmoid)
+Programming Language: Python
 
-## Project Status
-Machine learning notebook: [In progress / Completed — update to reflect the actual status]
+Data Processing: Pandas, NumPy
 
-## How to Run
-1. Open the notebook in Google Colab.
-2. Upload or connect to the permitted email dataset.
-3. Install the required dependencies.
-4. Run the notebook cells in order.
+NLP: NLTK, Keras Tokenizer
 
-## Future Improvements
-- Evaluate precision, recall, F1-score, and the confusion matrix.
-- Compare LSTM with TF-IDF and Logistic Regression.
-- Build a FastAPI backend and React frontend.
-- Deploy the application.
+Deep Learning: TensorFlow, Keras, LSTM
 
-## Dataset
-Add the original dataset source and its license here.
+Visualization: Matplotlib, Seaborn, WordCloud
+
+Dataset
+
+Dataset: Spam/Ham Email Dataset
+
+Total Samples: 5,171
+
+Classification: Binary (Spam / Ham)
+
+Dataset Source: [Add original dataset link and license]
+
+Project Workflow
+
+Load and explore the email dataset.
+
+Handle class imbalance using downsampling.
+
+Clean text by removing punctuation and stopwords.
+
+Convert text into integer sequences using tokenization.
+
+Apply padding to standardize sequence lengths.
+
+Build an LSTM-based deep learning model.
+
+Train and evaluate the model.
+
+Model Architecture
+
+Embedding Layer: Converts token IDs into dense word vectors.
+
+LSTM Layer: Learns sequential patterns from email text.
+
+Dense Layer: Uses ReLU activation.
+
+Output Layer: Uses sigmoid activation for binary classification.
+
+Model Performance
+
+Metric
+
+Result
+
+Test Accuracy
+
+97.00%
+
+Test Loss
+
+0.1202
+
+Optimizer
+
+Adam
+
+Loss Function
+
+Binary Cross-Entropy
+
+Note: These are preliminary results reproduced in Google Colab. The original notebook uses the test data for validation during training, so a separate held-out test evaluation is needed to confirm generalization performance.
+
+How to Run
+
+Download Detecting_Spam_Emails.ipynb.
+
+Open the notebook in Google Colab.
+
+Upload spam_ham_dataset.csv.
+
+Update the dataset path if necessary.
+
+Install any missing dependencies.
+
+Execute all cells sequentially.
+
+Project Status
+
+Notebook experiment completed and executed successfully in Google Colab.
+
+Future Improvements
+
+Evaluate precision, recall, F1-score, and confusion matrix.
+
+Use separate training, validation, and test sets.
+
+Compare LSTM with TF-IDF and Logistic Regression.
+
+Integrate the trained model with FastAPI and React.
+
+Deploy the application.
+
+Learning Outcomes
+
+Practiced NLP preprocessing and text tokenization.
+
+Explored embedding layers and LSTM networks.
+
+Gained experience training and evaluating binary classification models.
+
+Learned to execute deep learning experiments using Google Colab.
